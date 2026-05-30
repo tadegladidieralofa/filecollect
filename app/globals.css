@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 210 80% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 215 25% 15%;
+    --muted: 210 15% 94%;
+    --muted-foreground: 215 10% 45%;
+    --accent: 175 60% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 210 80% 44%;
+    --chart-1: 210 80% 44%;
+    --chart-2: 175 60% 40%;
+    --chart-3: 45 85% 55%;
+    --chart-4: 340 65% 50%;
+    --chart-5: 260 50% 55%;
+    --radius: 0.5rem;
+    --success: 142 71% 35%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 15% 95%;
+    --card: 215 25% 11%;
+    --card-foreground: 210 15% 95%;
+    --popover: 215 25% 11%;
+    --popover-foreground: 210 15% 95%;
+    --primary: 210 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 15% 16%;
+    --secondary-foreground: 210 15% 95%;
+    --muted: 215 15% 16%;
+    --muted-foreground: 215 10% 55%;
+    --accent: 175 55% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 15% 20%;
+    --input: 215 15% 20%;
+    --ring: 210 70% 55%;
+    --chart-1: 210 70% 55%;
+    --chart-2: 175 55% 45%;
+    --chart-3: 45 85% 55%;
+    --chart-4: 340 65% 55%;
+    --chart-5: 260 50% 60%;
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-success {
+    color: hsl(var(--success));
+  }
+  .bg-success {
+    background-color: hsl(var(--success));
+  }
+  .text-warning {
+    color: hsl(var(--warning));
+  }
+  .bg-warning {
+    background-color: hsl(var(--warning));
+  }
+}
